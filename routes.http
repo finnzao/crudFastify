@@ -1,0 +1,25 @@
+POST http://localhost:3333/videos 
+Content-Type: application/json
+
+{
+    "title":"Video Minecraft", 
+    "description":"MANEIRO",
+    "duration":420
+}
+
+
+###
+GET http://localhost:3333/videos
+
+###
+PUT http://localhost:3333/videos/526e61a0-d8b1-4593-987c-2f4563f1dd85
+Content-Type: application/json
+
+{
+    "title":"VIDEO TESTE 2", 
+    "description":"Esse video foi alterado",
+    "duration":120
+}
+
+###
+DELETE  http://localhost:3333/videos/526e61a0-d8b1-4593-987c-2f4563f1dd85
